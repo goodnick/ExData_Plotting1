@@ -8,7 +8,7 @@ createPlot2 <- function () {
 
     houseData <- readHousePowerConsumptionData()
     plot(houseData$Time, houseData$Global_active_power, type="l",
-         xlab = "", ylab = "Global Active Power (kilowatts")
+         xlab = "", ylab = "Global Active Power (kilowatts)")
 
     dev.off()
     message(paste("plot2 created -", filename))

@@ -8,7 +8,7 @@ createPlot1 <- function () {
 
     houseData <- readHousePowerConsumptionData()
     hist(houseData$Global_active_power, col = "red", main = "Global Active Power",
-         xlab = "Global Active Power (kilowatts")
+         xlab = "Global Active Power (kilowatts)")
 
     dev.off()
     message(paste("plot1 created -", filename))
