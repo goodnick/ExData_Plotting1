@@ -11,5 +11,5 @@ createPlot1 <- function () {
          xlab = "Global Active Power (kilowatts")
 
     dev.off()
-    message(paste("plot1 create -", filename))
+    message(paste("plot1 created -", filename))
 }
