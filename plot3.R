@@ -1,7 +1,9 @@
+## source the data loading file if it hasn't been sourced already
 if(!exists("readHousePowerConsumptionData", mode="function")) {
     source("ReadData.R")
 }
 
+## Create plot 3 and create png file
 createPlot3File <- function() {
     filename <- "plot3.png"
     png(filename = filename, bg = "transparent")
@@ -11,6 +13,7 @@ createPlot3File <- function() {
 
 }
 
+## Generate plot 3 on the current device.
 generatePlot3 <- function () {
     houseData <- readHousePowerConsumptionData()
     plot(houseData$Time, houseData$Sub_metering_1, type = "l", xlab = "",
